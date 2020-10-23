@@ -879,7 +879,7 @@ $(window).on('load', function() {
    */
   function togglePolygonLabels() {
     for (i in allTextLabels) {
-      if (map.getZoom() <= tryPolygonSetting(i, '_polygonLabelZoomLevel', 9)) {
+      if (map.getZoom() <= tryPolygonSetting(i, '_polygonLabelZoomLevel', 7)) {
         $('.polygon-label' + i).hide();
       } else {
         if ($('.polygons-legend' + i + ' input[name=prop]:checked').val() != '-1') {
